@@ -62,3 +62,158 @@ body {
   background: rgba(255, 255, 255, 0.65);
   color: #69566b;
 }
+
+.welcome {
+  min-height: calc(100vh - 130px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.welcome-content {
+  width: 90%;
+  max-width: 650px;
+
+  position: relative;
+  z-index: 2;
+}
+
+.small-text {
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #927d91;
+}
+
+h1 {
+  font-size: 52px;
+  line-height: 1.15;
+
+  color: #6d5a6d;
+
+  margin-bottom: 20px;
+}
+
+h1 span {
+  color: #a67fa0;
+}
+
+.description {
+  max-width: 500px;
+
+  margin: 0 auto 30px;
+
+  font-size: 16px;
+  line-height: 1.7;
+
+  color: #806f80;
+}
+
+.explore-button {
+  display: inline-block;
+
+  padding: 12px 25px;
+
+  text-decoration: none;
+
+  color: #6d5a6d;
+  background: rgba(255, 255, 255, 0.6);
+
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 30px;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  transition: 0.3s;
+}
+
+.explore-button:hover {
+  background: rgba(255, 255, 255, 0.85);
+  transform: translateY(-2px);
+}
+
+.bubble {
+  position: absolute;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.bubble-one {
+  width: 180px;
+  height: 180px;
+
+  top: 12%;
+  left: 8%;
+}
+
+.bubble-two {
+  width: 120px;
+  height: 120px;
+
+  bottom: 15%;
+  right: 10%;
+}
+
+.bubble-three {
+  width: 70px;
+  height: 70px;
+
+  top: 20%;
+  right: 20%;
+}
+
+footer {
+  text-align: center;
+
+  padding: 15px;
+
+  font-size: 12px;
+  color: #927d91;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    width: 92%;
+    padding: 10px 15px;
+  }
+
+  .logo {
+    font-size: 15px;
+  }
+
+  .nav-links a {
+    padding: 7px 10px;
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .bubble-one {
+    width: 120px;
+    height: 120px;
+  }
+
+  .bubble-two {
+    width: 80px;
+    height: 80px;
+  }
+
+  .bubble-three {
+    width: 50px;
+    height: 50px;
+  }
+}
