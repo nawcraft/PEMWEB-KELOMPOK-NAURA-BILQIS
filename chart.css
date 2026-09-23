@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  background: linear-gradient(135deg, #ffc9df, #e1d0ff, #cde5ff);
+  color: #383847;
+  min-height: 100vh;
+}
+
+.navbar {
+  margin: 20px auto 0;
+  width: 92%;
+  max-width: 1100px;
+  padding: 12px 20px;
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(180, 170, 190, 0.08);
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+  color: #555565 !important;
+  text-decoration: none;
+}
+
+.logo span {
+  color: #c98fa8;
+}
+
+.nav-menu {
+  gap: 8px;
+}
+
+.nav-menu .nav-link {
+  color: #777786;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 8px 15px !important;
+  border-radius: 12px;
+  transition: 0.25s ease;
+}
+
+.nav-menu .nav-link:hover {
+  background: rgba(255, 220, 233, 0.45);
+  color: #b87894;
+}
+
+.nav-menu .nav-link.active {
+  background: rgba(255, 220, 233, 0.6);
+  color: #b87894;
+}
+
+.hero {
+  padding-top: 70px !important;
+  padding-bottom: 35px !important;
+}
+
+.small-title {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #c38ca3;
+}
+
+.hero h1 {
+  font-size: 42px;
+  color: #50505f;
+}
+
+.description {
+  font-size: 15px;
+  color: #858593;
+}
+
+.week-info {
+  font-size: 13px;
+  font-weight: 700;
+  color: #9b7083;
+  background: rgba(255, 224, 235, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+}
+
+.chart-section {
+  max-width: 850px;
+}
+
+.chart-item {
+  min-height: 92px;
+  background: rgba(255, 255, 255, 0.62);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  border-radius: 18px;
+  box-shadow: 0 7px 22px rgba(180, 170, 190, 0.07);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.chart-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(180, 170, 190, 0.12);
+}
+
+.rank {
+  width: 38px;
+  font-size: 17px;
+  font-weight: 700;
+  color: #a7a7b4;
+  text-align: center;
+}
+
+.album-cover {
+  width: 62px;
+  height: 62px;
+  object-fit: cover;
+  box-shadow: 0 5px 15px rgba(160, 150, 170, 0.12);
+}
+
+.song-info h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #555565;
+}
+
+.song-info p {
+  font-size: 13px;
+  color: #9999a5;
+}
+
+.movement {
+  width: 45px;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.movement.up {
+  color: #9bbca9;
+}
+
+.movement.down {
+  color: #d79cae;
+}
+
+.movement.same {
+  color: #aaaab5;
+}
+
+.movement.new {
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: #a18fba;
+}
+
+.last-week {
+  width: 90px;
+  font-size: 11px;
+  color: #a4a4af;
+  text-align: right;
+}
+
+footer {
+  margin-top: 35px;
+  font-size: 12px;
+  color: #aaaab5;
+}
+
+@media (max-width: 991px) {
+  .navbar {
+    width: 94%;
+  }
+
+  .nav-menu {
+    margin-top: 10px;
+    gap: 2px;
+  }
+
+  .nav-menu .nav-link {
+    padding: 8px 12px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    padding-top: 45px !important;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .chart-section {
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+  }
+
+  .chart-item {
+    min-height: 80px;
+    padding: 12px !important;
+    gap: 10px !important;
+  }
+
+  .rank {
+    width: 25px;
+    font-size: 14px;
+  }
+
+  .album-cover {
+    width: 52px;
+    height: 52px;
+  }
+
+  .song-info h3 {
+    font-size: 14px;
+  }
+
+  .song-info p {
+    font-size: 12px;
+  }
+
+  .movement {
+    width: 30px;
+    font-size: 14px;
+  }
+}
