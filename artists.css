@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    background: linear-gradient(135deg, #fff8fb, #f8f9ff);
+    color: #4d4d5c;
+    min-height: 100vh;
+}
+
+.navbar {
+    background: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: #4d4d5c;
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    color: #777787;
+    font-weight: 500;
+    margin-left: 15px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #d88ca8;
+}
+
+.artist-header {
+    padding: 35px 0 20px;
+}
+
+.artist-header h1 {
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #4d4d5c;
+}
+
+.artist-header p {
+    margin-top: 8px;
+    color: #888897;
+}
+
+.artist-card {
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(100, 100, 120, 0.08);
+    transition: 0.3s ease;
+}
+
+.artist-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(100, 100, 120, 0.13);
+}
+
+.artist-card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+}
+
+.artist-info {
+    padding: 18px;
+    text-align: center;
+}
+
+.artist-info h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: #4d4d5c;
+}
+
+.artist-info p {
+    margin: 0;
+    color: #9999a8;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .artist-header h1 {
+        font-size: 30px;
+    }
+
+    .artist-card img {
+        height: 240px;
+    }
+
+    .nav-link {
+        margin-left: 0;
+    }
+}
