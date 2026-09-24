@@ -1,164 +1,168 @@
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Nunito", sans-serif;
-    background: linear-gradient(135deg, #fff8fb, #f8f9ff);
-    color: #4d4d5c;
-    min-height: 100vh;
+  font-family: "Nunito", sans-serif;
+  background: linear-gradient(135deg, #ffc9df, #e1d0ff, #cde5ff);
+  color: #4d4d5c;
+  min-height: 100vh;
 }
 
 .navbar {
-    background: rgba(255, 255, 255, 0.55);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
-    padding: 15px 0;
+  margin: 20px auto 0;
+  width: 92%;
+  max-width: 1100px;
+  padding: 12px 20px;
+  background: rgba(255, 255, 255, 0.55);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(180, 170, 190, 0.08);
 }
 
 .navbar-brand {
-    font-weight: 700;
-    color: #4d4d5c;
-    letter-spacing: 1px;
+  font-weight: 700;
+  color: #4d4d5c;
+  letter-spacing: 1px;
 }
 
 .nav-link {
-    color: #777787;
-    font-weight: 500;
-    margin-left: 15px;
+  color: #777787;
+  font-weight: 500;
+  margin-left: 15px;
 }
 
 .nav-link:hover,
 .nav-link.active {
-    color: #d88ca8;
+  color: #d88ca8;
 }
 
 .home {
-    min-height: calc(100vh - 72px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
+  min-height: calc(100vh - 72px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .welcome {
-    max-width: 650px;
-    padding: 30px;
-    position: relative;
-    z-index: 2;
+  max-width: 650px;
+  padding: 30px;
+  position: relative;
+  z-index: 2;
 }
 
 .small-title {
-    font-size: 14px;
-    letter-spacing: 4px;
-    color: #d88ca8;
-    font-weight: 700;
-    margin-bottom: 12px;
+  font-size: 14px;
+  letter-spacing: 4px;
+  color: #d88ca8;
+  font-weight: 700;
+  margin-bottom: 12px;
 }
 
 .welcome h1 {
-    font-size: 55px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    margin-bottom: 15px;
+  font-size: 55px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
 }
 
 .description {
-    color: #858595;
-    font-size: 17px;
-    line-height: 1.7;
-    margin-bottom: 28px;
+  color: #858595;
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 28px;
 }
 
 .buttons {
-    display: flex;
-    justify-content: center;
-    gap: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
 }
 
 .buttons a {
-    text-decoration: none;
-    padding: 11px 25px;
-    border-radius: 30px;
-    font-weight: 700;
-    transition: 0.3s ease;
+  text-decoration: none;
+  padding: 11px 25px;
+  border-radius: 30px;
+  font-weight: 700;
+  transition: 0.3s ease;
 }
 
 .btn-main {
-    background: #d88ca8;
-    color: white;
+  background: #d88ca8;
+  color: white;
 }
 
 .btn-main:hover {
-    background: #c97b99;
-    color: white;
-    transform: translateY(-2px);
+  background: #c97b99;
+  color: white;
+  transform: translateY(-2px);
 }
 
 .btn-second {
-    background: rgba(255, 255, 255, 0.7);
-    color: #777787;
-    border: 1px solid #e8e8ef;
+  background: rgba(255, 255, 255, 0.7);
+  color: #777787;
+  border: 1px solid #e8e8ef;
 }
 
 .btn-second:hover {
-    color: #d88ca8;
-    transform: translateY(-2px);
+  color: #d88ca8;
+  transform: translateY(-2px);
 }
 
 .bubble {
-    position: absolute;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.45);
-    border: 1px solid rgba(255, 255, 255, 0.7);
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.7);
 }
 
 .bubble-one {
-    width: 180px;
-    height: 180px;
-    top: 12%;
-    left: 8%;
+  width: 180px;
+  height: 180px;
+  top: 12%;
+  left: 8%;
 }
 
 .bubble-two {
-    width: 110px;
-    height: 110px;
-    bottom: 15%;
-    right: 12%;
+  width: 110px;
+  height: 110px;
+  bottom: 15%;
+  right: 12%;
 }
 
 .bubble-three {
-    width: 65px;
-    height: 65px;
-    top: 20%;
-    right: 20%;
+  width: 65px;
+  height: 65px;
+  top: 20%;
+  right: 20%;
 }
 
 @media (max-width: 768px) {
-    .welcome h1 {
-        font-size: 40px;
-    }
+  .welcome h1 {
+    font-size: 40px;
+  }
 
-    .description {
-        font-size: 15px;
-    }
+  .description {
+    font-size: 15px;
+  }
 
-    .buttons {
-        flex-direction: column;
-        align-items: center;
-    }
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .buttons a {
-        width: 150px;
-    }
+  .buttons a {
+    width: 150px;
+  }
 
-    .nav-link {
-        margin-left: 0;
-    }
+  .nav-link {
+    margin-left: 0;
+  }
 }
